@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[350px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -47,11 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+       I am a junior Front-End developer looking for a full-time position in a company aimed at contributing to making both everyday life and business easier, more efficient, productive and user-friendly.
+      I have reasonable knowledge of HTML, CSS, JavaScript ad REACT a well as practical experience in keeping my workflow in accordance with Agile/SCRUM methodology while working in a team. 
+      I am a fast-learner, responsible and ready for challenging tasks.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
