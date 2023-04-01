@@ -3,11 +3,12 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { github } from '../assets';
+import { www } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_code }) => {
   return (
     <motion.div variant={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -16,7 +17,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="relative bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
           <img 
             src={image} 
@@ -30,6 +31,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" /> 
+            </div>
+          </div>
+
+          <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
+            <div
+              onClick={() => window.open(live_code_demo, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img src={www} alt="live demo" className="w-1/2 h-1/2 object-contain" /> 
             </div>
           </div>
           

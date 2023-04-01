@@ -19,9 +19,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    portfolio1,
+    portfolio3,
+    portfolio2,
     threejs,
   } from "../assets";
   
@@ -109,7 +109,7 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      company_name: "Petly",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
@@ -122,7 +122,7 @@ import {
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      company_name: "Filmoteka ",
       icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
@@ -137,9 +137,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Ice-Cream Galaxy",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to search, sell dand buy pets from different users. It solves the problem each person faces when he needs a friend",
       tags: [
         {
           name: "react",
@@ -154,11 +154,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: portfolio1,
+      source_code_link: "https://github.com/PeterZabila/petly-team-project/",
+      live_code_demo: "https://blackinhub.github.io/petly-team-project-client/"
     },
     {
-      name: "Job IT",
+      name: "Petly",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -175,11 +176,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: portfolio3,
+      source_code_link: "https://github.com/PeterZabila/filmoteka/",
+      live_code_demo: "https://peterzabila.github.io/filmoteka/"
     },
     {
-      name: "Trip Guide",
+      name: "Filmoteka",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -196,8 +198,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: portfolio2,
+      source_code_link: "https://github.com/PeterZabila/IceCream-Galaxy/",
+      live_code_demo: "https://peterzabila.github.io/IceCream-Galaxy/"
     },
   ];
   
