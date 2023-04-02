@@ -137,7 +137,7 @@ import {
   
   const projects = [
     {
-      name: "Ice-Cream Galaxy",
+      name: "Petly",
       description:
         "Web-based platform that allows users to search, sell dand buy pets from different users. It solves the problem each person faces when he needs a friend",
       tags: [
@@ -154,14 +154,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio1,
+      image: portfolio3,
       source_code_link: "https://github.com/PeterZabila/petly-team-project/",
       live_code_demo: "https://blackinhub.github.io/petly-team-project-client/"
     },
     {
-      name: "Petly",
+      name: "Filmoteka",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for movies and TV series with different genres. Users also can view info on the movies and TV series. Initial App render show trending movies",
       tags: [
         {
           name: "react",
@@ -176,14 +176,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio3,
+      image: portfolio2,
       source_code_link: "https://github.com/PeterZabila/filmoteka/",
       live_code_demo: "https://peterzabila.github.io/filmoteka/"
     },
     {
-      name: "Filmoteka",
+      name: "Ice-Cream Galaxy",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Web App for online ice-cream shop, that allows users to choose products, view its details and reviews",
       tags: [
         {
           name: "nextjs",
@@ -198,7 +198,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: portfolio2,
+      image: portfolio1,
       source_code_link: "https://github.com/PeterZabila/IceCream-Galaxy/",
       live_code_demo: "https://peterzabila.github.io/IceCream-Galaxy/"
     },
