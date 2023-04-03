@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -31,19 +32,37 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "3D Portfolio",
-          from_email: form.email,
-          to_email: "petrozabila@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+    
+///template_ojzaewl
+///service_w5o1do5
+///bWMquDmtZwdr5JsG7
+
+emailjs.send(
+  'service_w5o1do5',
+  'template_ojzaewl',
+  {
+    from_name: form.name,
+    to_name: 'Petro',
+    from_email: form.email,
+    to_email: "petrozabila@gmail.com",
+    message: form.message,
+  },
+  'bWMquDmtZwdr5JsG7'
+)
+
+    // emailjs
+    //   .send(
+    //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+    //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    //     {
+    //       from_name: form.name,
+    //       to_name: 'Petro',
+    //       from_email: form.email,
+    //       to_email: "petrozabila@gmail.com",
+    //       message: form.message,
+    //     },
+    //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    //   )
       .then(
         () => {
           setLoading(false);

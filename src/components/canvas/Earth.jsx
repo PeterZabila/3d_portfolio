@@ -7,12 +7,18 @@ import CanvasLoader from "../Loader";
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
 
+
   return (
-    <primitive 
+    <>
+    <pointLight intensity={1} />
+    <ambientLight intensity={0.5}/>
+       <primitive 
     object={earth.scene} 
-    scale={2.5} 
-    position-y={0} 
+    scale={1.5} 
+    position-y={-1} 
     rotation-y={0} />
+    </>
+   
   );
 };
 
