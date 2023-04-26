@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import {
-  Hero, Navbar, About, Tech, Experience, Works, Contact, EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas
+  Hero, Navbar, About, Tech, Experience, Works, Contact, EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas, Steps
 } from './components'
 
 const App = () => {
@@ -15,6 +15,7 @@ const App = () => {
           <Hero/>
         </div>
         <About/>
+        {/* <Steps/> */}
         <Experience/>
         <Tech/>
         <Works/>
